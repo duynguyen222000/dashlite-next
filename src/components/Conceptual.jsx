@@ -21,21 +21,6 @@ export const Conceptual = () => {
             {listItem.map((item, index) => {
               return <ConceptItem key={index} item={item} index={index} />;
             })}
-            {/* <div className="col-md-6 col-lg-4">
-            <div className="conceptual-item">
-              <a href="" className="conceptual-item-img">
-                <img src={image1} alt="" />
-              </a>
-              <a className="conceptual-item-desc">
-                <p className="conceptual-item-desc-subtitle">Layout - demo 5</p>
-                <h4 className="conceptual-item-desc-title">
-                  Crypto Buy Sell Panel
-                  <span>New</span>
-                </h4>
-              </a>
-              <p className="conceptual-item-screen">14 screens</p>
-            </div>
-          </div> */}
           </div>
         </div>
       </div>
