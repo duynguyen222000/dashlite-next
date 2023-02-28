@@ -1,0 +1,31 @@
+.getversion {
+  background-color: $bg-primary;
+  padding: 60px 0;
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include small {
+      flex-direction: column;
+    }
+    @include medium {
+      flex-direction: column;
+    }
+    &-text {
+      .title {
+        color: $text-color;
+        font-size: 24px;
+        padding-bottom: 10px;
+      }
+      .subtitle {
+        color: $text-color;
+        max-width: 600px;
+      }
+    }
+    button {
+      padding: 20px 40px;
+      background-color: $bg-green;
+      font-weight: 500;
+    }
+  }
+}

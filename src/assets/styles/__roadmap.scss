@@ -1,0 +1,73 @@
+.roadmap {
+  padding: 80px 0;
+  &-content {
+    display: flex;
+    align-items: start;
+    &-wrap {
+      flex-basis: 50%;
+      padding-right: 80px;
+      .overline {
+        display: inline-block;
+        color: $bg-button;
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-weight: 500;
+      }
+      .title {
+        color: $bg-second;
+        font-weight: 500;
+        font-size: 32px;
+        letter-spacing: 1px;
+        position: relative;
+        padding-bottom: 10px;
+        padding-right: 100px;
+      }
+      .subtitle {
+        font-size: 16px;
+        color: $colortextlight;
+      }
+      .note {
+        font-style: italic;
+        font-size: 12px;
+        color: $colortag;
+      }
+    }
+    &-panel {
+      flex-basis: 70%;
+      background-color: $bg-blue;
+      padding: 20px;
+      border-radius: 10px;
+      .overline-list {
+        display: flex;
+        justify-content: space-between;
+        .overline {
+          color: $text-color;
+          font-size: 10px;
+          letter-spacing: 2px;
+          &:last-child {
+            font-style: italic;
+          }
+        }
+      }
+      .title {
+        color: $text-color;
+      }
+      .subtitle {
+        color: $bg-third;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@include small {
+  .roadmap {
+    &-content {
+      flex-direction: column;
+      &-panel {
+        min-height: 280px;
+      }
+    }
+  }
+}

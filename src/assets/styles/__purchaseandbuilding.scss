@@ -1,0 +1,80 @@
+.purchaseandbuilding {
+  background-color: $bg-third;
+  padding: 80px 0;
+  .purchase-wrap {
+    text-align: center;
+    .overline {
+      display: inline-block;
+      color: $bg-button;
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-weight: 500;
+    }
+    .title {
+      letter-spacing: 0.2px;
+      font-size: 36px;
+      padding-bottom: 20px;
+      span {
+        font-weight: 300;
+      }
+    }
+    .subtitle {
+      color: $colortextlight;
+    }
+  }
+  &-box {
+    .react-version {
+      background-color: $indigo;
+      padding: 50px;
+      border-radius: 10px;
+      .title {
+        color: $text-color;
+        margin-bottom: 20px;
+      }
+      .list-item {
+        list-style: none;
+        padding-left: 0;
+        color: $colortextlight;
+        li {
+          font-size: 14px;
+          padding-bottom: 4px;
+          &.highlight {
+            color: $yellow;
+            font-size: 12px;
+          }
+        }
+      }
+      .btn {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 20px 40px;
+        margin-top: 20px;
+      }
+    }
+    .request-feature {
+      background-color: $text-color;
+      padding: 50px;
+      border-radius: 10px;
+      margin-left: -100px;
+      margin-top: 50px;
+      @include small {
+        margin-left: unset;
+      }
+      .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .desc {
+        font-size: 14px;
+        color: $colortextlight;
+        line-height: 2;
+      }
+      .btn {
+        padding: 10px 30px;
+        font-size: 12px;
+        font-weight: 500;
+        background-color: $indigo;
+      }
+    }
+  }
+}

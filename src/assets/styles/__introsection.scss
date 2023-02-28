@@ -1,0 +1,117 @@
+.intro-section {
+  background-color: $bg-third;
+  padding: 40px 0;
+  &-wrap {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  &-desc {
+    padding: 0 40px;
+    .overline-title {
+      display: inline-block;
+      color: $bg-button;
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-weight: 500;
+      padding-bottom: 10px;
+    }
+    .title {
+      color: $bg-second;
+      font-weight: 500;
+      font-size: 36px;
+      letter-spacing: 1px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    .text-light {
+      font-size: 15px;
+      color: $colortextlight !important;
+      strong {
+        color: $bg-second;
+      }
+    }
+  }
+
+  .interview-number-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .interview-number-item {
+      text-align: center;
+      .number {
+        font-size: 42px;
+        font-weight: 500;
+        display: block;
+        color: $bg-button;
+      }
+      .item {
+        font-size: 12px;
+        color: $bg-button;
+      }
+      .highlight {
+        color: $highlight;
+      }
+      .purple {
+        color: $purple;
+      }
+    }
+  }
+  .btn-style {
+    margin: 60px 0 30px;
+    .btn {
+      border-radius: 4px;
+      font-size: 14px;
+      padding: 22px 32px;
+      margin: 0 12px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+    }
+  }
+}
+
+@include small {
+  .intro-section {
+    &-desc {
+      text-align: unset !important;
+      padding: unset;
+      .overline-title {
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 500;
+      }
+      .title {
+        font-size: 22px;
+      }
+      .text-light {
+        font-size: 12px;
+      }
+    }
+    .btn-style {
+      .btn {
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 12px 22px;
+        margin: 0 12px;
+        font-weight: 500;
+        letter-spacing: 0.1px;
+      }
+    }
+  }
+  .interview-number-list {
+    max-width: 320px;
+    .interview-number-item.highlight {
+      width: 100%;
+    }
+    .interview-number-item {
+      width: 50%;
+    }
+  }
+  .break {
+    display: block;
+    font-weight: 100;
+  }
+  .flex-interview {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,86 @@
+.storybehind {
+  background-color: $bg-third;
+  padding: 80px 0;
+  &-content {
+    display: flex;
+    &-wrap {
+      flex: 40%;
+      .overline {
+        display: inline-block;
+        color: $bg-button;
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-weight: 500;
+      }
+      .title {
+        color: $bg-second;
+        font-weight: 500;
+        font-size: 36px;
+        letter-spacing: 1px;
+        position: relative;
+        padding-bottom: 10px;
+        padding-right: 100px;
+      }
+    }
+    &-desc {
+      flex: 55%;
+      .subtitle {
+        font-size: 14px;
+        color: $colortextlight;
+      }
+      .author {
+        &-title {
+          display: inline-block;
+          color: $indigo;
+          font-size: 12px;
+          letter-spacing: 3px;
+          font-weight: 700;
+        }
+        &-list {
+          display: flex;
+          gap: 20px 80px;
+          .item {
+            display: flex;
+            align-items: center;
+
+            .avatar {
+              img {
+                width: 50px;
+                flex-shrink: 0;
+                border-radius: 100%;
+                margin-right: 14px;
+              }
+            }
+            .author-desc {
+              flex-shrink: 1;
+
+              .name {
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              .job {
+                font-size: 10px;
+                color: $colortextlight;
+                letter-spacing: 1px;
+                margin-bottom: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include small {
+  .storybehind {
+    &-content {
+      flex-direction: column;
+    }
+  }
+  .author {
+    &-list {
+      flex-direction: column;
+    }
+  }
+}
