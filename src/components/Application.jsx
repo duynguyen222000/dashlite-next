@@ -25,7 +25,7 @@ export const Application = () => {
         <div className="feature-mg">
           <div className="row">
             {listItem.map((item, index) => {
-              return <FeatureItem item={item} index={index} />;
+              return <FeatureItem key={index} item={item} index={index} />;
             })}
           </div>
         </div>
